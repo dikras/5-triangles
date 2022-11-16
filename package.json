@@ -1,0 +1,33 @@
+{
+  "name": "5-triangles",
+  "version": "1.0.0",
+  "description": "Тестовое задание для \"5 углов\"",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dikras/5-triangles.git"
+  },
+  "author": "D. Krasyukov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dikras/5-triangles/issues"
+  },
+  "homepage": "https://github.com/dikras/5-triangles#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "browser-sync": "^2.27.10",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.56.1"
+  }
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Оформление заказа</title>
+</head>
+<body>
+  <header class="header container">
+
+  </header>
+  <main class="page-content container">
+    <div class="intro">
+      <ul class="breadcrumbs intro__breadcrumbs intro__breadcrumbs--oncart-page">
+        <li class="breadcrumbs__item">Главная</li>
+        <li class="breadcrumbs__item">Оформление заказа</li>
+      </ul>
+      <h1 class="intro__title">Оформление заказа</h1>
+      <p class="intro__account-link">Есть аккаунт? <button class="intro__account-button">Войти</button></p>
+      <p class="intro__order-text">3 товара на сумму 25 000 ₽</p>
+    </div>
+    <section class="cart">
+      <h2 class="visually-hidden">Корзина</h2>
+      <div class="cart-item">
+        <div class="cart-item__wrapper">
+          <div class="cart-item__image-wrapper">
+            <img class="cart-item__image" src="./img/png/mobile/top-hills.png" alt="Утепленная стеганная куртка женская Top Hills">
+          </div>
+          <p class="cart-item__title">Утепленная стеганная куртка женская Top<br> Hills</p>
+          <button class="close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
+        </div>
+        <div class="cart-item__info">
+          <p class="cart-item__info-item">Артикул <span>512-05</span></p>
+          <p class="cart-item__info-item">Сезон <span>Осень-зима</span></p>
+        </div>
+        <ul class="cart-item__size-list">
+          <li class="cart-item__size-item">
+            <input type="radio" name="size" id="xs-size" value="xs">
+            <label for="xs-size">XS</label>
+          </li>
+          <li class="cart-item__size-item">
+            <input type="radio" name="size" id="s-size" value="s">
+            <label for="s-size">S</label>
+          </li>
+          <li class="cart-item__size-item">
+            <input type="radio" name="size" id="m-size" value="m" checked>
+            <label for="m-size">M</label>
+          </li>
+          <li class="cart-item__size-item">
+            <input type="radio" name="size" value="l" id="l-size">
+            <label for="l-size">L</label>
+          </li>
+          <li class="cart-item__size-item">
+            <input type="radio" name="size" value="xl" id="xl-size">
+            <label for="xl-size">XL</label>
+          </li>
+        </ul>
+        <ul class="cart-item__coloring-list">
+          <li class="cart-item__coloring-item">
+            <input type="radio" name="coloring" id="black" value="black">
+            <label for="black"></label>
+          </li>
+          <li class="cart-item__coloring-item"">
+            <input type="radio" name="coloring" id="blue" value="blue">
+            <label for="blue"></label>
+          </li>
+          <li class="cart-item__coloring-item"">
+            <input type="radio" name="coloring" id="brown" value="brown">
+            <label for="brown"></label>
+          </li>
+        </ul>
+        <div class="cart-item__price-wrapper">
+          <div class="cart-item__price">
+            <p class="cart-item__price-item cart-item__price-item--before">12 000 ₽</p>
+            <p class="cart-item__price-item cart-item__price-item--after">10 000 ₽</p>
+          </div>
+          <div class="cart-item__quantity">
+            <button class="cart-item__button-minus" aria-label="Уменьшить количество"></button>
+            <input class="cart-item__quantity-input" type="number" min="0" value="2" readonly>
+            <button class="cart-item__button-plus" aria-label="Увеличить количество"></button>
+          </div>
+          <div class="cart-item__total">
+            <p class="cart-item__total-item cart-item__total-item--before">24 000 ₽</p>
+            <p class="cart-item__total-item cart-item__total-item--after">20 000 ₽</p>
+          </div>
+        </div>
+      </div>
+      <div class="cart-item item-removed">
+        <div class="item-removed__wrapper">
+          <p class="item-removed__text">Товар <span class="item-removed__title">Наименование товара</span> был удален из корзины.</p>
+          <button class="item-removed__restore-button">Восстановить</button>
+          <button class="close-button close-button--removed-item" type="button"><span class="visually-hidden">Закрыть</span></button>
+        </div>
+      </div>
+      <div class="cart-item">
+        <div class="cart-item__image">
+          <img class="cart-item__image" src="./img/png/mobile/zolla.png" alt="Вязанная шапка Zolla">
+        </div>
+        <div class="product-info cart-item__info">
+          <p class="product-info__title">Вязанная шапка Zolla</p>
+          <p class="product-info__info">Артикул <span>891-256</span></p>
+          <p class="product-info__info">Сезон <span>Демисезон</span></p>
+        </div>
+        <div class="size cart-item__size">
+          <ul class="size__list">
+            <li class="size__item">XS</li>
+            <li class="size__item">S</li>
+            <li class="size__item">M</li>
+            <li class="size__item">L</li>
+            <li class="size__item">XL</li>
+          </ul>
+        </div>
+        <div class="coloring cart-item__coloring">
+          <ul class="coloring__list">
+            <li class="coloring__item"></li>
+          </ul>
+        </div>
+        <div class="cart-item__price">
+          <div class="cart-item__price">500 ₽</div>
+        </div>
+        <div class="quantity cart-item__quantity">
+          <button class="quantity__button" aria-label="Уменьшить количество"></button>
+          <input class="quantity__input" type="number" placeholder="1">
+          <button class="quantity__button" aria-label="Увеличить количество"></button>
+        </div>
+        <div class="cart-item__price-total">
+          <div class="cart-item__price-total">500 ₽</div>
+        </div>
+      </div>
+      <div class="cart-contacts">
+        <h2 class="cart-contacts__heading">Контактные данные</h2>
+        <div class="cart-contacts__wrapper">
+          <label class="cart-contacts__label" for="name">Имя</label>
+          <input class="cart-contacts__input" type="text" value="Александр" id="name">
+        </div>
+        <input class="cart-contacts__input" type="text" placeholder="Фамилия">
+        <input class="cart-contacts__input" type="text" placeholder="Телефон">
+        <input class="cart-contacts__input" type="text" placeholder="Email">
+        <label for="name">Имя</label>
+        <div class="cart-contacts__wrapper">
+          <label class="cart-contacts__label" for="address">Адрес доставки</label>
+          <input class="cart-contacts__input" type="text" id="address" value="г. Санкт-Петербург, пр. Просвещения, д. 99, кв. 152">
+        </div>
+      </div>
+      <div class="cart-map">
+
+      </div>
+      <div class="cart-payment">
+        <h2 class="cart-payment__heading">Оплата</h2>
+        <ul class="cart-payment__list">
+          <li class="cart-payment__item">Наличными курьеру</li>
+          <li class="cart-payment__item">Картой курьеру</li>
+          <li class="cart-payment__item">Картой онлайн</li>
+        </ul>
+      </div>
+      <div class="cart-comment">
+        <h2 class="cart-comment__heading">Комментарий к заказу</h2>
+        <textarea class="cart-comment__area" name="comment" cols="30" rows="10" placeholder="Комментарий к заказу"></textarea>
+        <p class="cart-comment__counter">Использовано 0/142 символов</p>
+      </div>
+      <div class="cart__footer">
+        <ul class="cart__total-list">
+          <li class="cart__total-item">Товары <span>24 500 ₽</span></li>
+          <li class="cart__total-item">Скидка <span>- 4 500 ₽</span></li>
+          <li class="cart__total-item">Акции <span>- 4 000 ₽</span></li>
+          <li class="cart__total-item">Промокод <span>- 500 ₽</span></li>
+          <li class="cart__total-item">Доставка <span>200 ₽</span></li>
+          <li class="cart__total-item">
+            <p class="cart__store-text">Получить товар со склада</p>
+            <p class="cart__store-warning">Сроки получения могут измениться</p>
+          </li>
+          <li class="cart__total-item">Итого: <span>20 700 ₽</li>
+        </ul>
+        <div class="cart__coupon coupon">
+          <input class="coupon__input" type="text" placeholder="Введите промокод">
+        </div>
+        <button class="button cart__order-button">Оформить заказ</button>
+      </div>
+      <p class="cart__agreement">Нажимая кнопку “Оформить заказ”, Вы соглашаетесь с политикой конфиденциальности.</p>
+    </section>
+  </main>
+</body>
+</html>
